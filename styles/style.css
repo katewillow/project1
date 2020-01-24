@@ -263,15 +263,38 @@
 }
 
 .footer {
-    background-color: #000000; 
+    background-color: #000000;
+    margin-top: 60px;
+    min-height: 350px;
+    margin-bottom: 40px;
+    flex-basis: 711px;
+    position: relative;
 }
 
 .logo__place_footer {
     background-image: url("../images/logo.svg");
-    height: 35px;
+    color: white;
     width: 183px;
+    height: 35px;
     position: absolute;
     z-index: 2;
+}
+
+.footer__column_content_copyright {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.foooter__social-icon_facebook {
+    background-image: url("../images/facebook_white.svg");
+}
+
+.foooter__social-icon_vk {
+    background-image: url("../images/vk_white.svg");
+}
+
+.foooter__social-icon_instagram {
+    background-image: url("../images/instagram_white.svg");
 }
 
 h1, h2, h3, h4, p {
