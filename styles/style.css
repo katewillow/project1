@@ -22,7 +22,7 @@
 }
 
 .logo__place_header {
-    background-image: url("/images/logo.svg");
+    background-image: url("../images/logo.svg");
     width: 183px;
     height: 32px;
     top: 30px;
