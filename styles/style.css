@@ -198,32 +198,65 @@
 }
 
 .feinman {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 790px;
-    background-color: #F2F2F2
-    scroll-padding-top: 100px;
+    position: relative;
+}
+
+.feinman__illustration {
+    width: 867px;
+    height: 637px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .feinman__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     width: 648px;
     line-height: 1.15;
     font-size: 120px; 
     font-weight: bolder;
+    position: absolute;
+    z-index: 2;
+
 }
 
 .feinman__subtitle {
-    scroll-padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
     line-height: 51px;
     font-size: 36px; 
     font-weight: normal;
+    z-index: 2;
 }
 
-.feinman__link {
-    position: absolute;
+.feinman__link { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 395px;
+    margin-top: 50%;
     margin-right: 48px;
     line-height: 51px;
     font-size: 36px; 
     font-weight: normal;
+    z-index: 2;
 }
 
 .kaufman { 
