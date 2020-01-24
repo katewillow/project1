@@ -32,7 +32,6 @@
 }
 
 .header__title {
-    margin: 0;
     margin-left: 64px;
     width: 730px;
     line-height: 96px;
@@ -98,7 +97,6 @@
     line-height: 1.2;
     font-size: 18px; 
     font-weight: normal;
-    margin: 0;
 }
 
 .two-columns__main-text {
@@ -107,7 +105,6 @@
 }
 
 .two-columns__paragraph {
-    margin: 0;
     margin-bottom: 30px;
     line-height: 34px;
     font-size: 24px; 
@@ -146,55 +143,52 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
     line-height: 34px;
     font-size: 24px; 
     font-weight: normal;
 }
 
 .table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*как выровнять все элементы таблицы*/
-    align-items: baseline;
     width: 1100px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    /* border-spacing: 0; */
+    border-color: black;
+    /* border-collapse: collapse; */
+}
+
+.table__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .table__cell {
-    /*как сделать одинаковое расстояние между ячейками*/
     width: 250px;
 }
 
 .table__heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: first-start;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     line-height: 1.15;
     font-size: 24px; 
     font-weight: bolder;
 }
 
 .table__text {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    /*как сделать расстояние между текстовыми блоками*/
     line-height: 1.2;
     font-size: 18px; 
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .feinman {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 790px;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
+    height: 790px;
 }
 
 .feinman__illustration {
@@ -207,29 +201,21 @@
 }
 
 .feinman__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
     width: 648px;
     line-height: 1.15;
     font-size: 120px; 
     font-weight: bolder;
+    text-align: center;
     z-index: 2;
 
 }
 
 .feinman__subtitle {
-    display: flex;
+    /*как поместить этот элемент снизу*/
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 70px;
-    margin-right: auto;
-    margin-left: auto;
     line-height: 51px;
     font-size: 36px; 
     font-weight: normal;
@@ -237,10 +223,10 @@
 }
 
 .feinman__link { 
-    display: flex;
+    /*как поместить этот элемент справа*/
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
     height: 395px;
     margin-top: 50%;
     margin-right: 48px;
@@ -301,6 +287,7 @@
     margin-bottom: 90px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -328,8 +315,15 @@
 }
 
 .logo__place_footer {
+    background-image: url("../images/logo.svg");
     height: 35px;
     width: 183px;
+    position: absolute;
+    z-index: 2;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
 }
 
 /*.div {
