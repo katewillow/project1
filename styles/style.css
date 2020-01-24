@@ -10,16 +10,69 @@
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    background-color: #F2F2F2;
+    position: relative;
     /* выше установили ограничения для секции */
+}
+
+.logo__place_header {
+    background-image: url("/images/logo.svg");
+    width: 183px;
+    height: 32px;
+    top: 30px;
+    left: 64px;
+    position: absolute;
+    z-index: 2;
+}
+
+.header__title {
+    margin: 0;
+    margin-left: 64px;
+    width: 730px;
+    line-height: 96px;
+    font-size: 102px; 
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.header__link {
+    color: #2f80ed; 
+}
+
+.header__subtitle {
+    width: 388px;
+    left: 64px;
+    bottom: 30px;
+    position: absolute;
+    z-index: 2;
+    line-height: 25px;
+    font-size: 18px; 
+    font-weight: normal;
+}
+
+.header__main-illustration {
+    width: 765px;
+    height: 608px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-    height: 568px;
     width: 568px;
+    height: 568px;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +82,135 @@
     margin-right: 0;
     margin-top: 80px;
 }
+
+.description {
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.two-columns {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.two-columns__brief {
+    width: 175px;
+    color: #2f80ed;
+    line-height: 1.2;
+    font-size: 18px; 
+    font-weight: normal;
+    margin: 0;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+}
+
+.two-columns__paragraph {
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 34px;
+    font-size: 24px; 
+    font-weight: normal;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font-size: 24px; 
+    font-weight: bolder;
+}
+
+.digits {
+   color: #FFFFFF;
+   padding-top: 100px;
+}
+
+.section-title {
+    width: 60%;
+    line-height: 69px;
+    font-size: 60px; 
+    font-weight: bolder;
+}
+
+.section-subtitle {
+    scroll-padding-top: 20px;
+    width: 60%;
+    line-height: 34px;
+    font-size: 24px; 
+    font-weight: normal;
+}
+
+.table {
+    display: flex;
+}
+
+.table__heading {
+    line-height: 1.15;
+    font-size: 24px; 
+    font-weight: bolder;
+}
+
+.table__text {
+    line-height: 1.2;
+    font-size: 18px; 
+    font-weight: normal;
+}
+
+.feinman {
+    height: 790px;
+    color: #F2F2F2
+    scroll-padding-top: 100px;
+}
+
+.feinman__title {
+    width: 648px;
+    line-height: 1.15;
+    font-size: 120px; 
+    font-weight: bolder;
+}
+
+.feinman__subtitle {
+    scroll-padding-top: 70px;
+    line-height: 51px;
+    font-size: 36px; 
+    font-weight: normal;
+}
+
+.feinman__link {
+    position: absolute;
+    height: 395px;
+    margin-right: 48px;
+    line-height: 51px;
+    font-size: 36px; 
+    font-weight: normal;
+}
+
+.kaufman { 
+    background-color: #000000;
+}
+
+.footer {
+    background-color: #000000; 
+}
+
+.logo__place_footer {
+    height: 35px;
+    width: 183px;
+}
+
+/* * {
+    border: 1px solid red;
+}
+
+*:after {
+    content: attr(class);
+    display: block;
+} */
