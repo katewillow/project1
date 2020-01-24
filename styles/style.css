@@ -129,7 +129,7 @@
 }
 
 .digits {
-   color: #FFFFFF;
+   background-color: #FFFFFF;
    padding-top: 100px;
 }
 
@@ -166,7 +166,7 @@
 
 .feinman {
     height: 790px;
-    color: #F2F2F2
+    background-color: #F2F2F2
     scroll-padding-top: 100px;
 }
 
