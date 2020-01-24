@@ -75,14 +75,6 @@
     background-color: #2f80ed;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
-
 .description {
     background-color: #FFFFFF;
     margin-top: 100px;
@@ -226,7 +218,6 @@
     line-height: 1.15;
     font-size: 120px; 
     font-weight: bolder;
-    position: absolute;
     z-index: 2;
 
 }
@@ -261,6 +252,35 @@
 
 .kaufman { 
     background-color: #000000;
+    overflow: hidden;
+    display: flex;
+}
+
+.kaufman__triangle {
+    right: -210px;
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    z-index: 1;
+}
+
+.section-title__theme_dark {
+    width: 60%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
 }
 
 .footer {
