@@ -307,12 +307,15 @@
     font-weight: bolder;
 }
 
-.footer__links {
+.footer__column-links {
     padding-bottom: 16px;
     line-height: 30px;
     font-size: 18px; 
     font-weight: normal;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+
 }
 
 .footer__social-icon {
@@ -321,20 +324,23 @@
     font-size: 18px; 
     font-weight: normal;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.foooter__social-icon_facebook {
+.footer__social-icon_facebook {
     background-image: url("../images/facebook_white.svg");
     width: 16px;
     height: 16px;
 }
 
-.foooter__social-icon_vk {
+.footer__social-icon_vk {
     background-image: url("../images/vk_white.svg");
     width: 16px;
     height: 16px;
+}
 
-.foooter__social-icon_instagram {
+.footer__social-icon_instagram {
     background-image: url("../images/instagram_white.svg");
     width: 16px;
     height: 16px;
