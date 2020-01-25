@@ -269,14 +269,17 @@
 }
 
 .footer__columns {
-    flex-basis: 711px;
     width: 90%;
     padding-top: 60px;
     padding-bottom: 40px;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+    position: relative;
+    flex-basis: 711px;
 }
 
 .logo__place_footer {
@@ -284,14 +287,6 @@
     color: white;
     width: 183px;
     height: 35px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 2;
-}
-
-.footer__column_content_copyright {
-    position: relative;
 }
 
 .footer__author {
@@ -300,7 +295,9 @@
     line-height: 25px;
     font-size: 18px; 
     font-weight: normal;
+    position: absolute;
     left: 0;
+    bottom: 0;
 }
 
 .footer__column-heading {
