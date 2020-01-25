@@ -32,6 +32,7 @@
 }
 
 .header__title {
+    margin: 0;
     margin-left: 64px;
     width: 730px;
     line-height: 96px;
@@ -263,14 +264,17 @@
 .footer {
     background-color: #000000;
     color: white;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__columns {
-    min-height: 350px;
     width: 90%;
     padding-top: 60px;
     padding-bottom: 40px;
     margin: auto;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
@@ -306,25 +310,28 @@
 }
 
 .footer__column-links {
-    padding-bottom: 16px;
     line-height: 30px;
     font-size: 18px; 
     font-weight: normal;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 16px;
+}
 
+.footer__info {  
+    display: block;
+    color: white;
+    line-height: 30px;
+    font-size: 18px; 
+    font-weight: normal;
+    text-decoration: none;
 }
 
 .footer__social-icon {
     display: block;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 16px;
+    color: white;
     line-height: 30px;
     font-size: 18px; 
     font-weight: normal;
+    text-decoration: none;
 }
 
 .footer__social-icon::before {
@@ -345,7 +352,7 @@
     content: url("../images/instagram_white.svg");
 }
 
-h1, h2, h3, h4, p {
+h2, h3, h4, p {
     margin: 0;
 }
 
