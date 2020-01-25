@@ -264,37 +264,83 @@
 
 .footer {
     background-color: #000000;
-    margin-top: 60px;
     min-height: 350px;
-    margin-bottom: 40px;
+    color: white;
+}
+
+.footer__columns {
     flex-basis: 711px;
-    position: relative;
+    width: 90%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .logo__place_footer {
-    background-image: url("../images/logo.svg");
+    background-image: url("../images/logo_white.svg");
     color: white;
     width: 183px;
     height: 35px;
+    top: 0;
+    left: 0;
     position: absolute;
     z-index: 2;
 }
 
 .footer__column_content_copyright {
-    margin-top: 18px;
-    margin-bottom: 18px;
+    position: relative;
+}
+
+.footer__author {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    line-height: 25px;
+    font-size: 18px; 
+    font-weight: normal;
+    left: 0;
+}
+
+.footer__column-heading {
+    padding-bottom: 20px;
+    line-height: 30px;
+    font-size: 18px; 
+    font-weight: bolder;
+}
+
+.footer__links {
+    padding-bottom: 16px;
+    line-height: 30px;
+    font-size: 18px; 
+    font-weight: normal;
+    list-style-type: none;
+}
+
+.footer__social-icon {
+    padding-bottom: 16px;
+    line-height: 30px;
+    font-size: 18px; 
+    font-weight: normal;
+    list-style-type: none;
 }
 
 .foooter__social-icon_facebook {
     background-image: url("../images/facebook_white.svg");
+    width: 16px;
+    height: 16px;
 }
 
 .foooter__social-icon_vk {
     background-image: url("../images/vk_white.svg");
-}
+    width: 16px;
+    height: 16px;
 
 .foooter__social-icon_instagram {
     background-image: url("../images/instagram_white.svg");
+    width: 16px;
+    height: 16px;
 }
 
 h1, h2, h3, h4, p {
