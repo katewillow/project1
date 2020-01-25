@@ -224,7 +224,6 @@
     font-weight: bolder;
     text-align: center;
     z-index: 2;
-
 }
 
 .feinman__subtitle {
@@ -243,7 +242,6 @@
     line-height: 51px;
     font-size: 36px; 
     font-weight: normal;
-    z-index: 2;
 }
 
 .kaufman { 
@@ -264,11 +262,11 @@
 
 .footer {
     background-color: #000000;
-    min-height: 350px;
     color: white;
 }
 
 .footer__columns {
+    min-height: 350px;
     width: 90%;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -283,7 +281,7 @@
 }
 
 .logo__place_footer {
-    background-image: url("../images/logo_white.svg");
+    background: url("../images/logo_white.svg");
     color: white;
     width: 183px;
     height: 35px;
@@ -319,40 +317,37 @@
 }
 
 .footer__social-icon {
+    display: block;
+    color: #fff;
+    margin: 0;
+    padding: 0;
     padding-bottom: 16px;
     line-height: 30px;
     font-size: 18px; 
     font-weight: normal;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.footer__social-icon_facebook {
-    background-image: url("../images/facebook_white.svg");
+.footer__social-icon::before {
     width: 16px;
     height: 16px;
+    margin-right: 0.5em;
 }
 
-.footer__social-icon_vk {
-    background-image: url("../images/vk_white.svg");
-    width: 16px;
-    height: 16px;
+.footer__social-icon_facebook::before {
+    content: url("../images/facebook_white.svg");
 }
 
-.footer__social-icon_instagram {
-    background-image: url("../images/instagram_white.svg");
-    width: 16px;
-    height: 16px;
+.footer__social-icon_vk::before {
+    content:  url("../images/vk_white.svg");
+}
+
+.footer__social-icon_instagram::before {
+    content: url("../images/instagram_white.svg");
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
 }
-
-/*.div {
-    border: 1px solid red;
-}*/
 
 /*:after {
     content: attr(class);
