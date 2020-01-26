@@ -21,7 +21,7 @@
     /* выше установили ограничения для секции */
 }
 
-.logo__place_header {
+.logo_place_header {
     background-image: url("../images/logo.svg");
     width: 183px;
     height: 32px;
@@ -43,6 +43,7 @@
 
 .header__link {
     color: #2f80ed;
+    text-decoration: none;
 }
 
 .header__subtitle {
@@ -208,6 +209,7 @@
 }
 
 .feinman {
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -245,17 +247,18 @@
 }
 
 .feinman__link {
-    margin: 0;
     position: absolute;
     height: 395px;
     top: 50%;
     right: 48px;
     line-height: 51px;
     font-size: 36px;
+    text-decoration: none;
+    color: black;
 }
 
 .kaufman {
-    background-color: #000000;
+    background-color: #1F1F1F;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -271,7 +274,7 @@
 }
 
 .footer {
-    background-color: #000000;
+    background-color: #1F1F1F;
     color: white;
     min-height: 350px;
     display: flex;
@@ -293,7 +296,7 @@
     flex-basis: 711px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
     background: url("../images/logo_white.svg");
     color: white;
     width: 183px;

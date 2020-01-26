@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Отлично: Вы подключили normalize.css -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Научиться учиться</title>
@@ -13,13 +13,15 @@
 
 <div class="page">
     <header class="header">
-        <div class="logo logo__place_header"></div>
+        <!-- Нужно исправить: Вы написали элемент logo__place_header, в брифе просят написать модификатор logo_place_header, аналогично проверьте в футере -->
+        <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
             Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-            <a href="#" class="header__link">Узнать →</a>
+            <!-- Можно лучше: для спец. символов нужно использовать специальные мнемоники, почитайте о них по ссылке https://ru.wikipedia.org/wiki/Мнемоники_в_HTML -->
+            <a href="#" class="header__link">Узнать &rarr;</a>
         </p>
-        <img class="header__main-illustration" src="images/two_again.png" alt="Опять двойка"/>
+        <img class="header__main-illustration" src="images/two_again.png" alt="Опять двойка">
         <div class="header__square-pic"></div>
     </header>
 
@@ -91,14 +93,14 @@
         </section>
 
         <section class="feinman">
-            <img class="feinman__illustration" src="images/feinman.png" alt="Фейман"/>
+            <img class="feinman__illustration" src="images/feinman.png" alt="Фейман">
             <h2 class="feinman__title">Метод Фейнмана</h2>
             <p class="feinman__subtitle">Выучить и не забыть.</p>
-            <p class="feinman__link">Подробнее →</p>
+            <a href="#" class="feinman__link">Подробнее &rarr;</a>
         </section>
 
         <section class="kaufman">
-            <img class="kaufman__triangle" src="images/triangle.svg" alt="Треугольник"/>
+            <img class="kaufman__triangle" src="images/triangle.svg" alt="Треугольник">
             <h3 class="section-title section-title_theme_dark">Принципы обучения</h3>
             <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
             <div class="table table_theme_dark">
@@ -151,8 +153,9 @@
     <footer class="footer">
         <div class="footer__columns">
             <div class="footer__column footer__column_content_copyright">
-                <div class="logo logo__place_footer"></div>
-                <p class="footer__author">&copy 2020. Екатерина Суркова</p>
+                <!--Нужно исправить: Модификатор logo__place_footer не может существовать в отрыве от logo__place -->
+                <div class="logo logo_place_footer"></div>
+                <p class="footer__author">&copy; 2020. Екатерина Суркова</p>
             </div>
             <div class="footer__column footer__column_content_info">
                 <h3 class="footer__column-heading">О Практикуме</h3>
@@ -165,17 +168,58 @@
             <div class="footer__column footer__column_content_social">
                 <h3 class="footer__column-heading">Соцсети</h3>
                 <div class="footer__column-links footer__column-links_social-icon">
-                    <a class="footer__social-icon footer__social-icon_facebook"
-                       href="https://www.facebook.com/yandex.praktikum/">Facebook</a>
-                    <a class="footer__social-icon footer__social-icon_vk"
-                       href="https://vk.com/yandex.praktikum">ВКонтакте</a>
-                    <a class="footer__social-icon footer__social-icon_instagram"
-                       href="https://www.instagram.com/yndx.praktikum/">Instagram</a>
+                    <a class="footer__social-icon footer__social-icon_facebook" href="https://www.facebook.com/yandex.praktikum/">Facebook</a>
+                    <a class="footer__social-icon footer__social-icon_vk" href="https://vk.com/yandex.praktikum">ВКонтакте</a>
+                    <a class="footer__social-icon footer__social-icon_instagram" href="https://www.instagram.com/yndx.praktikum/">Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
 </div>
-</body>
 
+
+</body>
 </html>
+
+
+<!--
+
+  Отлично:
+
+
+    Вы не включаете текстовый контент в div
+    Вы используете правильные относительные пути к изображениям
+    У всех картинок есть атрибут alt
+    Вы правильно размечаете заголовки
+    У вас верно подключены файлы стилей
+    Вы не фиксируете высоту текстового контента
+    Верстка соответствует брифу
+
+  Нужно исправить:
+
+
+    1. Однотипные повторяющиеся элементы (навигация; теги, которые воспринимаются перечислением) нужно реализовывать списком - http://htmlbook.ru/html/ul
+    + 2. Стилистически текст header__link не соовтествует брифу, уберите подчеркивание
+    + 3. Блок feinman должен иметь серую подложку, сверьтесь с брифом
+    + 4. feinman__link - должен быть ссылкой
+    + 5. Фоновый цвет блока kaufman отличается от того, что дан в брифе
+    + 6. Фоновый цвет блока footer отличается от того, что дан в брифе
+    7. Исправьте ошибки по БЭМ
+
+
+  Можно лучше:
+
+    + 1. Для спец. символов нужно использовать специальные мнемоники, почитайте о них по ссылке
+    https://ru.wikipedia.org/wiki/Мнемоники_в_HTML
+
+
+
+  Всегда используйте валидатор для самопроверки верстки https://validator.w3.org/nu/#textarea .
+  Он поможет отловить большинство ошибок.
+
+  Не удаляйте, пожалуйста, мои комментарии до принятия работы.
+
+  Напоминаю вам, что работа принимается только после исправления всех замечаний с пометкой "Нужно исправить", пометки
+  "Можно лучше" также желательны к исправлению для вашего развития, однако, с ними работа будет принята.
+
+-->
