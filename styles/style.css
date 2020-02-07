@@ -1,3 +1,12 @@
+@keyframes header__square-pic  {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(360deg);
+}
+}
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -42,8 +51,13 @@
 }
 
 .header__link {
-    color: #2f80ed;
-    text-decoration: none;
+     color: #2f80ed;
+     text-decoration: none;
+ }
+
+.header__link:hover {
+    opacity: 0.5;
+    transition: 0.7s ease-in;
 }
 
 .header__subtitle {
@@ -75,6 +89,8 @@
     right: 0;
     top: 64px;
     background-color: #2f80ed;
+    animation: header__square-pic 20s infinite;
+    overflow: auto;
 }
 
 .description {
@@ -119,6 +135,41 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: bolder;
+}
+
+.cards {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__item {
+    margin-right: 100px;
+    margin-bottom: 60px;
+}
+.cards__img {
+    width: 160px;
+    height: 160px;
+    padding: 60px 40px 43px;
+    border-radius: 200px;
+}
+
+.cards__title {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cards__description {
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
 }
 
 .digits {
@@ -249,6 +300,11 @@
     color: black;
 }
 
+.feinman__link:hover {
+    opacity: 0.3;
+    transition: 0.7s ease-in;
+}
+
 .kaufman {
     background-color: #1F1F1F;
     overflow: hidden;
@@ -331,9 +387,19 @@
     color: white;
 }
 
+.footer__info:hover {
+    opacity: 0.3;
+    transition: 0.7s ease-in;
+}
+
 .footer__social-icon {
     text-decoration: none;
     color: white;
+}
+
+.footer__social-icon:hover {
+    opacity: 0.3;
+    transition: 0.7s ease-in;
 }
 
 .footer__social-icon::before {
