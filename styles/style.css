@@ -7,6 +7,15 @@
 }
 }
 
+@keyframes kaufman__triangle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -57,7 +66,7 @@
 
 .header__link:hover {
     opacity: 0.5;
-    transition: 0.7s ease-in;
+    transition: 1s ease-in;
 }
 
 .header__subtitle {
@@ -324,7 +333,7 @@
 
 .feinman__link:hover {
     opacity: 0.3;
-    transition: 0.7s ease-in;
+    transition: 1s ease-in;
 }
 
 .khan {
@@ -404,7 +413,7 @@
 
 .khan__buy-link:hover {
     opacity: 0.5;
-    transition: 0.7s ease-in;
+    transition: 1s ease-in;
 }
 
 .kaufman {
@@ -421,6 +430,38 @@
     height: 877px;
     position: absolute;
     z-index: 1;
+    animation: kaufman__triangle 20s infinite;
+}
+
+.resources__logo-zone {
+    width: 1100px;
+    margin: 80px auto 217px;
+}
+
+.resources__logo {
+    width: 270px;
+    height: 38px;
+    display: inline;
+}
+
+.resources__logo_arzamas {
+    display: inline;
+    content: url("../images/arzamas.svg")
+}
+
+.resources__logo_n1 {
+    display: inline;
+    content: url("../images/n1.svg")
+}
+
+.resources__logo_strelka {
+    display: inline;
+    content: url("../images/strelka.svg")
+}
+
+.resources__logo_polka {
+    display: inline;
+    content: url("../images/polka.svg")
 }
 
 .footer {
@@ -491,7 +532,7 @@
 
 .footer__info:hover {
     opacity: 0.3;
-    transition: 0.7s ease-in;
+    transition: 1s ease-in;
 }
 
 .footer__social-icon {
@@ -501,7 +542,7 @@
 
 .footer__social-icon:hover {
     opacity: 0.3;
-    transition: 0.7s ease-in;
+    transition: 1s ease-in;
 }
 
 .footer__social-icon::before {
