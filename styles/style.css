@@ -146,11 +146,15 @@
     font-weight: bolder;
 }
 
-.cards {
-    width: 80%;
-    margin-top: 60px;
+.technics {
+    width:80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.cards {
+    width: 920px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -158,6 +162,7 @@
 .cards__item {
     margin-right: 100px;
     margin-bottom: 60px;
+    /* как перенести последние два элемента на другую строчку */
 }
 .cards__img {
     width: 160px;
@@ -165,6 +170,7 @@
     padding: 60px 40px 43px;
     border-image: round;
     border-radius: 50%;
+    /* как нормально закруглить картинки */
 }
 
 .cards__title {
@@ -187,10 +193,11 @@
     margin-left: auto;
     display: flex;
     justify-content: center;
+    /* как расположить видео поверх границы двух секций */
 }
 
-.video__iframe {
-    /* как задать расстояние в 20px между элементами*/
+.video__iframe_kaufman {
+    margin-right: 20px;
 }
 
 .oakley {
@@ -398,6 +405,7 @@
     width: 620px;
     height: 608px;
     object-fit: cover;
+    /* как выровнять и убрать часть картинки согласно макету */
 }
 
 .khan__buy-link {
@@ -431,6 +439,7 @@
     position: absolute;
     z-index: 1;
     animation: kaufman__triangle 20s infinite;
+    position: absolute;
 }
 
 .resources__logo-zone {
@@ -441,26 +450,22 @@
 .resources__logo {
     width: 270px;
     height: 38px;
-    display: inline;
+    display: inline-flex;
 }
 
 .resources__logo_arzamas {
-    display: inline;
     content: url("../images/arzamas.svg")
 }
 
 .resources__logo_n1 {
-    display: inline;
     content: url("../images/n1.svg")
 }
 
 .resources__logo_strelka {
-    display: inline;
     content: url("../images/strelka.svg")
 }
 
 .resources__logo_polka {
-    display: inline;
     content: url("../images/polka.svg")
 }
 
