@@ -99,7 +99,7 @@
     top: 64px;
     background-color: #2f80ed;
     animation: header__square-pic 20s infinite;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .description {
@@ -154,7 +154,6 @@
 
 .cards {
     width: 920px;
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     /* как перенести последние два элемента на другую строчку */
@@ -164,13 +163,13 @@
     margin-right: 100px;
     margin-bottom: 60px;
 }
+
 .cards__img {
     width: 160px;
     height: 160px;
     padding: 60px 40px 43px;
-    border-image: round;
     border-radius: 50%;
-    /* как нормально закруглить картинки */
+    /* как ровно закруглить картинки */
 }
 
 .cards__title {
@@ -212,6 +211,7 @@
 
 .digits {
     background-color: #FFFFFF;
+    margin-bottom: 100px;
 }
 
 .section-title {
@@ -222,7 +222,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    line-height: 69px;
+    line-height: 1.15;
     font-size: 60px;
     font-weight: bolder;
 }
@@ -291,6 +291,7 @@
 
 .feinman {
     background-color: #F2F2F2;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -346,7 +347,6 @@
 .khan {
     background-color: #F2F2F2;
     margin-top: 105px;
-    margin-bottom: 90px;
 }
 
 .khan__container {
@@ -427,6 +427,8 @@
 .kaufman {
     background-color: #1F1F1F;
     overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 90px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -440,6 +442,7 @@
     z-index: 1;
     animation: kaufman__triangle 20s infinite;
     position: absolute;
+    overflow: hidden;
 }
 .resources {
     margin-top: 100px;
@@ -450,7 +453,7 @@
     margin: 80px;
     margin-right: auto;
     margin-left: auto;
-    transform: translate(16%, 16%);
+    transform: translate(20%, 20%);
 }
 
 .resources__logo {
@@ -478,6 +481,8 @@
 
 .footer {
     background-color: #1F1F1F;
+    margin-top: 60px;
+    margin-bottom: 40px;
     color: white;
     min-height: 350px;
     display: flex;
