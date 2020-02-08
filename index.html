@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Отлично: Вы подключили normalize.css -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Научиться учиться</title>
 </head>
-
 <body>
-
 <div class="page">
     <header class="header">
-        <!-- Нужно исправить: Вы написали элемент logo__place_header, в брифе просят написать модификатор logo_place_header, аналогично проверьте в футере -->
         <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
             Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-            <!-- Можно лучше: для спец. символов нужно использовать специальные мнемоники, почитайте о них по ссылке https://ru.wikipedia.org/wiki/Мнемоники_в_HTML -->
             <a href="#" class="header__link">Узнать &rarr;</a>
         </p>
         <img class="header__main-illustration" src="images/two_again.png" alt="Опять двойка">
         <div class="header__square-pic"></div>
     </header>
-
     <main class="content">
-
         <section class="description">
             <div class="two-columns">
                 <p class="two-columns__brief">Главные проблемы в обучении</p>
@@ -48,7 +41,6 @@
                 </div>
             </div>
         </section>
-
         <section class="technics">
             <h3 class="section-title">Техники обучения</h3>
             <p class="section-subtitle">Пять практик от Барбары Оакли</p>
@@ -81,7 +73,6 @@
                 </div>
             </div>
         </section>
-
         <section class="video">
             <h3 class="section-title">Видео нa TED</h3>
             <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
@@ -90,12 +81,10 @@
                 <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer;
                 autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <div class="video__iframe_urban">
-                    <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"  allow="accelerometer;
-                    autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </iframe></div>
+                    <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer;
+                    autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
         </section>
-
         <section class="oakley">
             <div class="two-columns">
                 <p class="two-columns__brief">История Барбары Оакли.</p>
@@ -108,14 +97,12 @@
                 </div>
             </div>
         </section>
-
         <section class="feinman">
             <img class="feinman__illustration" src="images/feinman.png" alt="Фейман">
             <h2 class="feinman__title">Метод Фейнмана</h2>
             <p class="feinman__subtitle">Выучить и не забыть.</p>
             <a href="#" class="feinman__link">Подробнее &rarr;</a>
         </section>
-
         <section class="digits">
             <h3 class="section-title">Цифры и факты</h3>
             <p class="section-subtitle">Про учёбу и мозг</p>
@@ -158,7 +145,6 @@
                 </div>
             </div>
         </section>
-
         <section class="khan">
             <div class="khan__container">
                 <p class="khan__author">Салман Хан</p>
@@ -174,7 +160,6 @@
                 </div>
             </div>
         </section>
-
         <section class="kaufman">
             <img class="kaufman__triangle" src="images/triangle.svg" alt="Треугольник">
             <h3 class="section-title section-title_theme_dark">Принципы обучения</h3>
@@ -224,26 +209,20 @@
                 </div>
             </div>
         </section>
-
         <section class="resources">
             <h3 class="section-title">Полезные ресурсы</h3>
             <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
             <div class="resources__logo-zone">
-                <ul class="resources__logo">
-                    <li class="resources__logo resources__logo_arzamas"></li>
-                    <li class="resources__logo resources__logo_n1"></li>
-                    <li class="resources__logo resources__logo_strelka"></li>
-                    <li class="resources__logo resources__logo_polka"></li>
-                </ul>
+                <a class="resources__logo resources__logo_arzamas" href="#"></a>
+                <a class="resources__logo resources__logo_n1" href="#"></a>
+                <a class="resources__logo resources__logo_strelka" href="#"></a>
+                <a class="resources__logo resources__logo_polka" href="#"></a>
             </div>
         </section>
-
     </main>
-
     <footer class="footer">
         <div class="footer__columns">
             <div class="footer__column footer__column_content_copyright">
-                <!--Нужно исправить: Модификатор logo__place_footer не может существовать в отрыве от logo__place -->
                 <div class="logo logo_place_footer"></div>
                 <p class="footer__author">&copy; 2020. Екатерина Суркова</p>
             </div>
@@ -272,50 +251,6 @@
         </div>
     </footer>
 </div>
-
-
 </body>
 </html>
 
-
-<!--
-
-  Отлично:
-
-
-    Вы не включаете текстовый контент в div
-    Вы используете правильные относительные пути к изображениям
-    У всех картинок есть атрибут alt
-    Вы правильно размечаете заголовки
-    У вас верно подключены файлы стилей
-    Вы не фиксируете высоту текстового контента
-    Верстка соответствует брифу
-
-  Нужно исправить:
-
-
-    1. Однотипные повторяющиеся элементы (навигация; теги, которые воспринимаются перечислением) нужно реализовывать списком - http://htmlbook.ru/html/ul
-    2. Стилистически текст header__link не соовтествует брифу, уберите подчеркивание
-    3. Блок feinman должен иметь серую подложку, сверьтесь с брифом
-    4. feinman__link - должен быть ссылкой
-    5. Фоновый цвет блока kaufman отличается от того, что дан в брифе
-    6. Фоновый цвет блока footer отличается от того, что дан в брифе
-    7. Исправьте ошибки по БЭМ
-
-
-  Можно лучше:
-
-    1. Для спец. символов нужно использовать специальные мнемоники, почитайте о них по ссылке
-    https://ru.wikipedia.org/wiki/Мнемоники_в_HTML
-
-
-
-  Всегда используйте валидатор для самопроверки верстки https://validator.w3.org/nu/#textarea .
-  Он поможет отловить большинство ошибок.
-
-  Не удаляйте, пожалуйста, мои комментарии до принятия работы.
-
-  Напоминаю вам, что работа принимается только после исправления всех замечаний с пометкой "Нужно исправить", пометки
-  "Можно лучше" также желательны к исправлению для вашего развития, однако, с ними работа будет принята.
-
--->
