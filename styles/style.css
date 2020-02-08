@@ -3,7 +3,7 @@
         transform: rotate(-15deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(345deg);
 }
 }
 
@@ -147,7 +147,7 @@
 }
 
 .technics {
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -157,12 +157,12 @@
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    /* как перенести последние два элемента на другую строчку */
 }
 
 .cards__item {
     margin-right: 100px;
     margin-bottom: 60px;
-    /* как перенести последние два элемента на другую строчку */
 }
 .cards__img {
     width: 160px;
@@ -405,7 +405,7 @@
     width: 620px;
     height: 608px;
     object-fit: cover;
-    /* как выровнять и убрать часть картинки согласно макету */
+    object-position: top;
 }
 
 .khan__buy-link {
@@ -441,16 +441,23 @@
     animation: kaufman__triangle 20s infinite;
     position: absolute;
 }
-
+.resources {
+    margin-top: 100px;
+    margin-bottom: 217px;
+}
 .resources__logo-zone {
     width: 1100px;
-    margin: 80px auto 217px;
+    margin: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(16%, 16%);
 }
 
 .resources__logo {
     width: 270px;
     height: 38px;
     display: inline-flex;
+    /*как распределить логотипы равномерно*/
 }
 
 .resources__logo_arzamas {
