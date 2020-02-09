@@ -67,7 +67,7 @@
 
 .header__link:hover {
     opacity: 0.7;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .header__subtitle {
@@ -147,8 +147,10 @@
 
 .technics {
     width: 80%;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #FFFFFF;
 }
 
 .cards {
@@ -199,6 +201,11 @@
     bottom: -50px;
 }
 
+.video {
+    margin-top: 100px;
+    background-color: #FFFFFF;
+}
+
 .video__iframe_kaufman {
     margin-right: 20px;
 }
@@ -206,7 +213,6 @@
 .oakley {
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding-top: 160px;
     padding-bottom: 80px;
@@ -221,7 +227,6 @@
 .section-title {
     margin: 0;
     width: 60%;
-    margin-top: 100px;
     margin-bottom: 20px;
     text-align: center;
     margin-left: auto;
@@ -232,7 +237,6 @@
 }
 
 .section-title_theme_dark {
-    margin-top: 90px;
     color: white;
 }
 
@@ -263,7 +267,6 @@
 
 .table_theme_dark {
     margin-top: 80px;
-    margin-bottom: 90px;
     z-index: 2;
     color: white;
 }
@@ -345,12 +348,12 @@
 
 .feinman__link:hover {
     opacity: 0.7;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .khan {
     background-color: #F2F2F2;
-    margin-top: 105px;
+    padding-top: 105px;
 }
 
 .khan__container {
@@ -413,7 +416,6 @@
     object-fit: cover;
     object-position: top;
     display: block;
-
 }
 
 .khan__buy-link {
@@ -427,7 +429,7 @@
 
 .khan__buy-link:hover {
     opacity: 0.7;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .kaufman {
@@ -438,7 +440,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
 }
 
 .kaufman__triangle {
@@ -448,15 +449,18 @@
     position: absolute;
     z-index: 1;
     animation: kaufman__triangle 20s infinite;
-    position: absolute;
 }
 
+.resources {
+    margin-top: 100px;
+    margin-bottom: 217px;
+    background-color: #FFFFFF;
+}
 .resources__logo-zone {
     width: 1100px;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 217px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -469,7 +473,7 @@
 
 .resources__logo:hover {
     opacity: 0.4;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .resources__logo_arzamas {
@@ -500,8 +504,6 @@
 
 .footer__columns {
     width: 90%;
-    padding-top: 60px;
-    padding-bottom: 40px;
     margin: auto;
     flex-grow: 1;
     display: flex;
@@ -558,7 +560,7 @@
 
 .footer__info:hover {
     opacity: 0.7;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .footer__social-icon {
@@ -568,7 +570,7 @@
 
 .footer__social-icon:hover {
     opacity: 0.7;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .footer__social-icon::before {
