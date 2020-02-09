@@ -178,6 +178,7 @@
 }
 
 .cards__title {
+    margin: 0;
     line-height: 1.15;
     font-size: 24px;
     font-weight: bolder;
@@ -197,8 +198,7 @@
     margin-left: auto;
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: -50px;
+    margin-bottom: -50px;
 }
 
 .video {
@@ -248,6 +248,7 @@
     line-height: 34px;
     font-size: 24px;
     text-align: center;
+    font-weight: normal;
 }
 
 .section-subtitle_theme_dark {
@@ -318,7 +319,6 @@
 
 .feinman__title {
     margin: 0;
-    margin-top: 100px;
     width: 648px;
     line-height: 1.15;
     font-size: 120px;
@@ -393,6 +393,7 @@
     line-height: 1.15;
     font-size: 24px;
     font-weight: bolder;
+    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -400,6 +401,7 @@
     line-height: 1.15;
     font-size: 24px;
     font-weight: normal;
+    margin: 0;
     margin-bottom: 68px;
 }
 
